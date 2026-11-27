@@ -1,0 +1,67 @@
+{
+  "manifest_version": 3,
+  "name": "Custom Site Redesign",
+  "version": "1.0",
+  "description": "Modifies the design of a specific website.",
+
+  "content_scripts": [
+    {
+      "matches": ["https://me-tp.qureo.education/*"],
+      "css": ["styles.css"],
+      "js": [
+        "lib/ace/ace.js",
+        "lib/ace/theme-monokai.js",
+        "lib/ace/mode-javascript.js",
+        "script.js"
+      ],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": ["https://me-tp.qureo.education/*"],
+      "js": ["page-bridge.js"],
+      "run_at": "document_idle",
+      "world": "MAIN"
+    }
+  ],
+
+  "web_accessible_resources": [
+    {
+      "resources": ["Satoshi-Variable.ttf"],
+      "matches": ["https://me-tp.qureo.education/*"]
+    }
+  ]
+}
+
+{
+  "manifest_version": 3,
+  "name": "Custom Site Redesign",
+  "version": "1.0",
+  "description": "Modifies the design of a specific website.",
+
+  "content_scripts": [
+    {
+      "matches": ["https://me-tp.qureo.education/*"],
+      "css": ["styles.css"],
+      "js": [
+        "lib/ace/ace.js",
+        "lib/ace/theme-monokai.js",
+        "lib/ace/mode-javascript.js",
+        "script.js"
+      ],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": ["https://me-tp.qureo.education/*"],
+      "js": ["page-bridge.js"],
+      "run_at": "document_idle",
+      "world": "MAIN"
+    }
+  ],
+
+  "web_accessible_resources": [
+    {
+      "resources": ["Satoshi-Variable.ttf"],
+      "matches": ["https://me-tp.qureo.education/*"]
+    }
+  ]
+}

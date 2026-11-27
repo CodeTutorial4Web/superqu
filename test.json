@@ -1,0 +1,428 @@
+{
+    "chapter": {
+        "description": "Let's review how to use and write for loops that repeat a specified process a specified number of times!",
+        "id": 30022,
+        "name": "Looping (2)",
+        "question_count": 9,
+        "section_id": 2,
+        "seq": 22,
+        "test_range": "loops",
+        "test_type": "review"
+    },
+    "lecture": {
+        "chapter_id": 30022,
+        "id": 30022010,
+        "seq": 1,
+        "title": "Reviewing loops"
+    },
+    "section": {
+        "course_id": "javascript_en",
+        "id": 2
+    },
+    "summaries": [
+        {
+            "check_text": "Loops are used when you want to repeat a specific process a certain number of times.",
+            "lecture_id": 30022010,
+            "text": "What are loops?"
+        },
+        {
+            "check_text": "Loops are written as for(how many times to execute){specified processing}.",
+            "lecture_id": 30022010,
+            "text": "How to write loops"
+        },
+        {
+            "check_text": "The loop is counted in parentheses (first value; while the condition is satisfied; value is added by 1), and so on.",
+            "lecture_id": 30022010,
+            "text": "How loops work"
+        }
+    ],
+    "talks": [
+        {
+            "body": {
+                "avatar": "07_fight.png",
+                "serif": "\"She sells seashells by the seashore.\", She sells seashells by the seashore.\", \"She sells seashells by the seashore.\", I did it!"
+            },
+            "id": 3002201001,
+            "lecture_id": 30022010,
+            "type": "student"
+        },
+        {
+            "body": {
+                "avatar": "13_think.png",
+                "serif": "Are you practicing tongue twisters again? Seems like tongue twisters were popular before too."
+            },
+            "id": 3002201002,
+            "lecture_id": 30022010,
+            "type": "teacher"
+        },
+        {
+            "body": {
+                "avatar": "02_smile.png",
+                "serif": "Yes, yes, trends come back quickly."
+            },
+            "id": 3002201003,
+            "lecture_id": 30022010,
+            "type": "student"
+        },
+        {
+            "body": {
+                "avatar": "",
+                "serif": "I-I see."
+            },
+            "id": 3002201004,
+            "lecture_id": 30022010,
+            "type": "teacher"
+        },
+        {
+            "body": {
+                "avatar": "",
+                "serif": "Speaking of which, we wrote a tongue twister program before, remember?"
+            },
+            "id": 3002201005,
+            "lecture_id": 30022010,
+            "type": "teacher"
+        },
+        {
+            "body": {
+                "avatar": "11_nayamu.png",
+                "serif": "Let's see... to repeat something we use a \"for loop,\" right?"
+            },
+            "id": 3002201006,
+            "lecture_id": 30022010,
+            "type": "student"
+        },
+        {
+            "body": {
+                "avatar": "08_fight.png",
+                "serif": "Correct! This is the program to repeat \"She sells seashells by the seashore.\" three times!"
+            },
+            "id": 3002201007,
+            "lecture_id": 30022010,
+            "type": "teacher"
+        },
+        {
+            "body": {
+                "codes": [
+                    {
+                        "code": "for ( let i = 0; i < 3; i++ ) {\n    console.log(\"She sells seashells by the seashore.\");\n}",
+                        "editable": false,
+                        "lang": "javascript",
+                        "model_answer": ""
+                    }
+                ],
+                "editorOption": {
+                    "lineNumber": 0,
+                    "scrollPosition": "top"
+                },
+                "editor_type": "demo",
+                "guide": "\"She sells seashells by the seashore.\" was output 3 times, wasn't it?",
+                "hints": [
+                    "Check to make sure the program in the editor matches the one in the problem."
+                ],
+                "question": {
+                    "no": 1,
+                    "text": "Click \"Run Code\" without modifying the program.",
+                    "title_type": "demo"
+                }
+            },
+            "id": 3002201008,
+            "lecture_id": 30022010,
+            "type": "try"
+        },
+        {
+            "body": {
+                "avatar": "",
+                "serif": "That's right, it was like this!"
+            },
+            "id": 3002201009,
+            "lecture_id": 30022010,
+            "type": "student"
+        },
+        {
+            "body": {
+                "avatar": "",
+                "serif": "Do you also remember the details inside the for loop?"
+            },
+            "id": 3002201010,
+            "lecture_id": 30022010,
+            "type": "teacher"
+        },
+        {
+            "body": {
+                "alt": "",
+                "filename": "chapter22-1-1.png",
+                "title": "Structure of for statement"
+            },
+            "id": 3002201011,
+            "lecture_id": 30022010,
+            "type": "supplement"
+        },
+        {
+            "body": {
+                "avatar": "",
+                "serif": "Now I remember! The part inside the parentheses \"( )\" after \"for\" is always complicated and hard for me to remember."
+            },
+            "id": 3002201012,
+            "lecture_id": 30022010,
+            "type": "student"
+        },
+        {
+            "body": {
+                "avatar": "14_yubi.png",
+                "serif": "That's the part that determines how many times to repeat!"
+            },
+            "id": 3002201013,
+            "lecture_id": 30022010,
+            "type": "teacher"
+        },
+        {
+            "body": {
+                "avatar": "",
+                "serif": "Looking at what's inside the parentheses, first we declare variable i and assign it an initial value of 0.\nSince we want to write a program that repeats 3 times, the process is executed 3 times counting from 0, so that's 0, 1, 2!"
+            },
+            "id": 3002201014,
+            "lecture_id": 30022010,
+            "type": "teacher"
+        },
+        {
+            "body": {
+                "avatar": "",
+                "serif": "Ah, right, right! I kind of remember now..."
+            },
+            "id": 3002201015,
+            "lecture_id": 30022010,
+            "type": "student"
+        },
+        {
+            "body": {
+                "avatar": "",
+                "serif": "Even if you understand the meaning, sometimes it's hard to recall. In those cases, you just have to write it many times to remember! We'll be writing a lot after this, so let that sink in!"
+            },
+            "id": 3002201016,
+            "lecture_id": 30022010,
+            "type": "teacher"
+        },
+        {
+            "body": {
+                "avatar": "",
+                "serif": "After deciding how many times to repeat, you write the process inside the \"{ }\". The repeating process this time is [[bold]]console.log(\"She sells seashells by the seashore.\")[[/bold]]."
+            },
+            "id": 3002201017,
+            "lecture_id": 30022010,
+            "type": "teacher"
+        },
+        {
+            "body": {
+                "avatar": "07_fight.png",
+                "serif": "When you look at it step by step, it's actually simple. Alright! I'll write a lot and remember it!"
+            },
+            "id": 3002201018,
+            "lecture_id": 30022010,
+            "type": "student"
+        },
+        {
+            "body": {
+                "codes": [
+                    {
+                        "code": "fitbBlock1{\n    console.log(\"She sells seashells by the seashore.\");\n}",
+                        "editable": true,
+                        "lang": "javascript",
+                        "model_answer": "for ( let i = 0; i < 3; i++ ) {\n    console.log(\"She sells seashells by the seashore.\");\n}",
+                        "placeholders": [
+                            {
+                                "alternative_code": "for ( let i = 0; i < 3; i++ ) ",
+                                "col_size": 30,
+                                "default_code": "",
+                                "model_answer": "for ( let i = 0; i < 3; i++ ) ",
+                                "name": "fitbBlock1",
+                                "position": {
+                                    "col": 3,
+                                    "line": 0
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "editorOption": {
+                    "lineNumber": 0,
+                    "scrollPosition": "top"
+                },
+                "editor_type": "part",
+                "guide": "\"She sells seashells by the seashore.\" was output 3 times, wasn't it?",
+                "hints": [
+                    "Check to make sure the program in the editor matches the one in the problem."
+                ],
+                "question": {
+                    "no": 2,
+                    "text": "We will create a program that outputs \"She sells seashells by the seashore.\" 3 times.\n\nEnter the program as follows:\n[[code]]for ( let i = 0; i < 3; i++ ) {\n    console.log(\"She sells seashells by the seashore.\");\n}[[/code]]",
+                    "title_type": "try"
+                }
+            },
+            "id": 3002201019,
+            "lecture_id": 30022010,
+            "type": "try"
+        },
+        {
+            "body": {
+                "avatar": "",
+                "serif": "Yes, that's good! You've got it! Now, let's output a different tongue twister! What else is popular now?"
+            },
+            "id": 3002201020,
+            "lecture_id": 30022010,
+            "type": "teacher"
+        },
+        {
+            "body": {
+                "avatar": "02_smile.png",
+                "serif": "How about \"Six slippery snails slid slowly seaward.\"?"
+            },
+            "id": 3002201021,
+            "lecture_id": 30022010,
+            "type": "student"
+        },
+        {
+            "body": {
+                "avatar": "09_ok.png",
+                "serif": "OK! Let's output that tongue twister 3 times too!"
+            },
+            "id": 3002201022,
+            "lecture_id": 30022010,
+            "type": "teacher"
+        },
+        {
+            "body": {
+                "codes": [
+                    {
+                        "code": "fitbBlock1 {\n    console.log(\"Six slippery snails slid slowly seaward.\");\n}",
+                        "editable": true,
+                        "lang": "javascript",
+                        "model_answer": "for ( let i = 0; i < 3; i++ ) {\n    console.log(\"Six slippery snails slid slowly seaward.\");\n}",
+                        "placeholders": [
+                            {
+                                "alternative_code": "for ( let i = 0; i < 3; i++ )",
+                                "col_size": 29,
+                                "default_code": "",
+                                "model_answer": "for ( let i = 0; i < 3; i++ )",
+                                "name": "fitbBlock1",
+                                "position": {
+                                    "col": 3,
+                                    "line": 0
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "editorOption": {
+                    "lineNumber": 0,
+                    "scrollPosition": "top"
+                },
+                "editor_type": "part",
+                "guide": "\"Six slippery snails slid slowly seaward.\" was output 3 times, wasn't it?",
+                "hints": [
+                    "The program that repeats a specified process is written as for (how many times to repeat) { specified process }.",
+                    "Inside the parentheses, we write the meaning of \"declare a variable and assign 0, while the value is less than 3, add 1 to the value each time.\""
+                ],
+                "question": {
+                    "no": 3,
+                    "text": "Use a for loop to output \"Six slippery snails slid slowly seaward.\" to the console 3 times.",
+                    "title_type": "try"
+                }
+            },
+            "id": 3002201023,
+            "lecture_id": 30022010,
+            "type": "try"
+        },
+        {
+            "body": {
+                "avatar": "",
+                "serif": "Nice! Are you getting used to it? Is there anything else you want to output?"
+            },
+            "id": 3002201024,
+            "lecture_id": 30022010,
+            "type": "teacher"
+        },
+        {
+            "body": {
+                "avatar": "",
+                "serif": "Oh, maybe we could do the \"10 times quiz\" again that we did before!"
+            },
+            "id": 3002201025,
+            "lecture_id": 30022010,
+            "type": "student"
+        },
+        {
+            "body": {
+                "avatar": "",
+                "serif": "Good idea! Since it's the \"10 times quiz,\" the number of repetitions is different from before, so be careful!"
+            },
+            "id": 3002201026,
+            "lecture_id": 30022010,
+            "type": "teacher"
+        },
+        {
+            "body": {
+                "codes": [
+                    {
+                        "code": "",
+                        "editable": true,
+                        "lang": "javascript",
+                        "model_answer": "for ( let i = 0; i < 10; i++ ) {\n    console.log(\"silk\");\n}"
+                    }
+                ],
+                "editorOption": {
+                    "lineNumber": 0,
+                    "scrollPosition": "top"
+                },
+                "guide": "\"silk\" was output 10 times, wasn't it?",
+                "hints": [
+                    "The program that repeats a specified process is written as for (how many times to repeat) { specified process }.",
+                    "Inside the parentheses, we write the meaning of \"declare a variable and assign 0, while the value is less than 10, add 1 to the value each time.\""
+                ],
+                "question": {
+                    "no": 4,
+                    "text": "Use a for loop to output \"silk\" to the console 10 times.\n\nText copy: [[copy]]silk[[/copy]]",
+                    "title_type": "try"
+                }
+            },
+            "id": 3002201027,
+            "lecture_id": 30022010,
+            "type": "try"
+        },
+        {
+            "body": {
+                "avatar": "",
+                "serif": "Okay Cody, lastly, try reading the output results!"
+            },
+            "id": 3002201028,
+            "lecture_id": 30022010,
+            "type": "student"
+        },
+        {
+            "body": {
+                "avatar": "",
+                "serif": "Silk, silk, silk..."
+            },
+            "id": 3002201029,
+            "lecture_id": 30022010,
+            "type": "teacher"
+        },
+        {
+            "body": {
+                "avatar": "02_smile.png",
+                "serif": "What do cows drink?"
+            },
+            "id": 3002201030,
+            "lecture_id": 30022010,
+            "type": "student"
+        },
+        {
+            "body": {
+                "avatar": "03_kira.png",
+                "serif": "Water! Hehe, I won't be fooled this time!"
+            },
+            "id": 3002201031,
+            "lecture_id": 30022010,
+            "type": "teacher"
+        }
+    ]
+}
